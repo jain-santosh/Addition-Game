@@ -8,6 +8,10 @@
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <style>
+        body{
+            background-color: rgba(0, 0, 0);
+            color: #fff;
+        }
         #app{
             height: 90vh;
             display: flex;
@@ -32,8 +36,23 @@
             padding: 20px;
         }
         #winner {
-            font-size: 72px;
+            font-size: 150px;
             color: green;
+            animation: grow 3s infinite; 
+        }
+        @keyframes grow {
+            0% {
+                font-size: 50px; 
+            }
+            25% {
+                font-size: 75px;
+            }
+            50% {
+                font-size: 100px;
+            }
+            100% {
+                font-size: 125px;
+            }
         }
     </style>
     <title>Addition Quiz</title>
